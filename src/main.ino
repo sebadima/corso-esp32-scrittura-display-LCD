@@ -14,16 +14,19 @@ void setup()
   lcd.clear();
   lcd.backlight();
   lcd.setCursor(0,0);  
-  lcd.print("Inizio procedura"); 
+  lcd.print("Inizio conteggio"); 
+  delay(3000);  
  
-
   for (int ix=1; ix<=10; ix++) 
   {
     lcd.clear();
     Serial.println(ix);  
+    lcd.print(ix); 
     delay(1000);  
   }
 
+  lcd.clear();
+  lcd.print("Fine conteggio"); 
 }
 
 void loop() 
