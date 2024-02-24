@@ -13,6 +13,7 @@ void setup()
   lcd.init(); 
   lcd.clear();
   lcd.backlight();
+  lcd.setContrast(30); // Valore di contrasto (da 0 a 255)
   lcd.setCursor(0,0);  
   lcd.print("Inizio conteggio"); 
   delay(3000);  
